@@ -1,0 +1,28 @@
+.md-modal{ min-width: 320px; max-width: 800px;}
+.md-content{ padding: 40px; background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; min-height: 100%; }
+.modal-desc{ height: 100%; margin: 0; overflow: auto; }
+.md-content h3{ background: inherit; opacity: 1; text-transform: uppercase; font-size: 28px; line-height: 38px; margin: 0; font-weight: 700;line-height: normal; }
+.md-content p{ text-align: center; font-size: 14px; line-height: 22px; font-weight: 400; }
+.md-content > div { padding: 15px 0px 30px 0px; margin: 15px 0px 30px 0px; }
+.popup__submit{ margin: 0 !important; padding: 0 !important; }
+.popup__submit a{ font-size: 16px; line-height: 36px; font-weight: 700; text-transform: uppercase; text-decoration: none; opacity: 1; width: 100%;padding: 8px;display: block;clear: both;position: relative;margin: 0px auto 0px auto;left: 0;text-align: center; }
+.modal_close{ width: 20px; height: 20px; position: absolute; /*padding: 5px;*/ top: 20px; right: 20px; background-color: rgba(0,0,0,0.4);color: #fff;border-radius: 50%;border: 1px solid #fff;background-repeat: no-repeat;background-position: center center;background-size: contain; }
+.modal_close:before,.modal_close:after{ position: absolute; left: 8px; content: ' '; height: 10px; width: 2px; background-color: #fff; top: 4px; }
+.modal_close:before{transform: rotate(45deg);}
+.modal_close:after{transform: rotate(-45deg);}
+.modal_close:hover{cursor: pointer;}
+.md-overlay{ background-color: rgba(0,0,0,0.6); }
+@media (min-width: 790px) and (max-width: 900px){
+	.md-modal{ max-width: 400px; min-width: 220px; max-height: 350px; overflow: auto;}
+}
+@media screen and (max-width: 767px){
+	.md-modal{ max-width: 280px; min-width: 220px; max-height: 300px; overflow: auto;}
+}
+@media screen and (max-width: 567px){
+	.md-modal{ max-width: 320px; min-width: 300px; max-height: none;}
+}
+@media screen and (max-width: 360px){ 
+	.md-modal{ max-width: 280px; min-width: 220px; max-height: 500px; }
+	.md-content{ padding: 20px; }
+	.md-content h3{ padding: 0.1em; }
+}
